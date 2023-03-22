@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Path name="CPNC-50" schemaVersion="3.2.0" xmlns="https://www.abdynamics.com/PathV3">
+  <Header originNode="0" syncCode="0" speedDistanceControlPoint="FrontAxle" startTimeOffset="0" pathHeadingDefinitionPoint="OriginNode">
+    <OriginDatum latitude="57.78107909" longitude="12.77321366" altitude="192.346" bearing="336.37868" />
+    <OriginNodePoint x="0.25" y="-3.724" heading="90" />
+    <EndPoint x="0.25" y="4.276" time="7.2" velocity="0" heading="90" />
+  </Header>
+  <SegmentList>
+    <Segment description="Stop">
+      <StartPoint x="0.25" y="-3.724" time="0" velocity="0" heading="90" />
+      <SegmentType>
+        <StopPoint reverseDirection="false">
+          <EndTrigger channel="TimeToCollisionLongitudinal" value="3.6" />
+        </StopPoint>
+      </SegmentType>
+      <EndCriteria>
+        <EndVelocity>0</EndVelocity>
+      </EndCriteria>
+    </Segment>
+    <Segment description="Acceleration">
+      <StartPoint x="0.25" y="-3.724" time="0" velocity="0" heading="90" />
+      <SegmentType>
+        <Straight length="1" />
+      </SegmentType>
+      <EndCriteria>
+        <EndVelocity>1.3888888888888888</EndVelocity>
+      </EndCriteria>
+    </Segment>
+    <Segment description="Straight">
+      <StartPoint x="0.25" y="-2.724" time="1.44" velocity="1.3888888888888888" heading="90" />
+      <SegmentType>
+        <Straight length="3" />
+      </SegmentType>
+      <EndCriteria>
+        <EndVelocity>1.3888888888888888</EndVelocity>
+      </EndCriteria>
+    </Segment>
+    <Segment description="Straight">
+      <StartPoint x="0.25" y="0.276" time="3.6" velocity="1.3888888888888888" heading="90" />
+      <SegmentType>
+        <Straight length="3" />
+      </SegmentType>
+      <EndCriteria>
+        <EndVelocity>1.3888888888888888</EndVelocity>
+      </EndCriteria>
+    </Segment>
+    <Segment description="Deceleration">
+      <StartPoint x="0.25" y="3.276" time="5.76" velocity="1.3888888888888888" heading="90" />
+      <SegmentType>
+        <Straight length="1" />
+      </SegmentType>
+      <EndCriteria>
+        <EndVelocity>0</EndVelocity>
+      </EndCriteria>
+    </Segment>
+    <Segment description="Stop">
+      <StartPoint x="0.25" y="4.276" time="7.2" velocity="0" heading="90" />
+      <SegmentType>
+        <StopPoint reverseDirection="false">
+          <EndTrigger channel="Duration" value="0" />
+        </StopPoint>
+      </SegmentType>
+      <EndCriteria>
+        <EndVelocity>0</EndVelocity>
+      </EndCriteria>
+    </Segment>
+  </SegmentList>
+  <CriticalSectionList />
+  <SplineFromFileDataList />
+  <PointOfInterestList />
+</Path>
